@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="244.0" style="-fx-background-color: #ff0000;">
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="219.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Transformice.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="413.0">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="149.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lock-logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="174.0" text="Username">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="230.0" text="Password">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tx_username" layoutX="132.0" layoutY="166.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="tx_password" layoutX="132.0" layoutY="222.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="button_login" layoutX="149.0" layoutY="287.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" style="-fx-background-color: #ff0000; -fx-cursor: hand;" text="Login">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="74.0" layoutY="348.0" text="Not a user?">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_sign_up" layoutX="183.0" layoutY="342.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign up now" textFill="#c91919">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</HBox>
